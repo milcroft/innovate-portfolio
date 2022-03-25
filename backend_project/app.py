@@ -20,14 +20,18 @@ app.register_blueprint(views, url_prefix="/")
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("index.html", page_title = "Home")
+
+@app.route("/admin")
+def admin_extension():
+    return render_template("admin.html",  page_title = "Admin")
 
 ########################################
 
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template("404.html"), 404
+    return render_template("404.html",  page_title = "404 Page Not Found"), 404
 
 ########################################
 
