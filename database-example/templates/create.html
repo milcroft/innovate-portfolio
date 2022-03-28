@@ -2,4 +2,24 @@
 
 {% block content %}
 
+<h1>{% block title %} {% endblock %} New Post</h1>
+
+<form method="post">
+    <label for="title">
+        Title
+    </label>
+    <br>
+    <input type="text" name="title" placeholder="title">
+    <br>
+    <label for="content">
+        Content
+    </label>
+    <br>
+    <Textarea name="content" placeholder="content" cols="60" rows="15"> {{request.form['content']}}
+     </Textarea>
+    <br>
+    <button type="submit">Submit</button>
+
+</form>
+
 {% endblock %}
