@@ -1,0 +1,36 @@
+@import 'style';
+
+body {
+  background-color: $backgroundColor;
+}
+
+h1 {
+  @include title;
+  font-size: 36px;
+  text-align: left;
+}
+
+h2 {
+  @include title;
+  font-size: 18px;
+  text-align: right;
+}
+
+p {
+  font-family: $mainFont;
+  color: $fontColor;
+}
+
+.button1 {
+  @include btn;
+  background-color: green;
+}
+
+.button2 {
+  @include btn;
+  background-color: red;
+}
+.button3 {
+  @include btn;
+  background-color: blue;
+}

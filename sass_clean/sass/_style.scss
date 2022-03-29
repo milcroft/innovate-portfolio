@@ -1,0 +1,22 @@
+$backgroundColor: #242f40;
+$fontColor: #b7d1da;
+$accentColor: #ffa69e;
+
+$headingFont: 'Major Mono Display', monospace;
+$mainFont: monospace;
+
+@mixin title {
+  font-family: $headingFont;
+  color: $fontColor;
+}
+
+@mixin btn {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid black;
+  cursor: pointer;
+  color: white;
+  &:hover {
+    opacity: 0.7;
+  }
+}

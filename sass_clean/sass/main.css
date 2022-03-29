@@ -1,0 +1,62 @@
+body {
+  background-color: #242f40;
+}
+
+h1 {
+  font-family: "Major Mono Display", monospace;
+  color: #b7d1da;
+  font-size: 36px;
+  text-align: left;
+}
+
+h2 {
+  font-family: "Major Mono Display", monospace;
+  color: #b7d1da;
+  font-size: 18px;
+  text-align: right;
+}
+
+p {
+  font-family: monospace;
+  color: #b7d1da;
+}
+
+.button1 {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid black;
+  cursor: pointer;
+  color: white;
+  background-color: green;
+}
+
+.button1:hover {
+  opacity: 0.7;
+}
+
+.button2 {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid black;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+}
+
+.button2:hover {
+  opacity: 0.7;
+}
+
+.button3 {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid black;
+  cursor: pointer;
+  color: white;
+  background-color: blue;
+}
+
+.button3:hover {
+  opacity: 0.7;
+}
+/*# sourceMappingURL=main.css.map */
