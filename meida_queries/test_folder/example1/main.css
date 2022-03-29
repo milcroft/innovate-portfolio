@@ -1,0 +1,36 @@
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (orientation: portrait) {
+  body {
+    background-color: black;
+  }
+  .mobile {
+    display: inline-block;
+    color: white;
+  }
+  .title,
+  .subtitle,
+  p {
+    color: white;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+  .desktop {
+    display: inline-block;
+  }
+  .title,
+  .subtitle,
+  p {
+    color: rgb(41, 41, 41);
+  }
+}
