@@ -1,0 +1,18 @@
+body {
+  background-color: gainsboro;
+  font-family: monospace;
+}
+
+.dark-mode {
+  background-color: rgb(0, 0, 0);
+  color: gainsboro;
+  font-family: monospace;
+}
+
+.dark-mode h1 {
+  color: white;
+}
+img {
+  width: 400px;
+  height: auto;
+}
