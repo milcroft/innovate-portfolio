@@ -1,0 +1,60 @@
+{% extends "base-home.html" %}
+
+{% block content %}
+
+<section class="intro">
+    <div class="toggle-me">
+        <p>Here ⤵</p>
+    </div>
+    <button class="btn-connect"> <a href="#connect">LETS CONNECT</a></button>
+
+
+
+
+    <div class="section-container">
+        <h1 class="main-title">
+            Hi there 👋 I'm <span class="my-name">Darren</span> <br>
+            Aspiring fullstack developer and
+            life long learner 👨‍🎓
+            living in Manchester, UK.
+        </h1>
+
+        </h1>
+        <p class="arrow"> ↓ </p>
+
+
+</section>
+
+<section class="blog">
+    <h2>Blog Posts</h2>
+
+    <div class="post-column-container">
+        <div class="post-box">
+
+            <h3> <a href="../blog/array-methods-in-javascript.html">Array methods in JavaScript</a>
+            </h3>
+            <p class="post-box-date">21 February, 2020</p>
+            <p class="post-box-tag">JavaScript</p>
+        </div>
+
+        <div class="post-box">
+            <h3> <a href="../blog/How-to-destructure-objects-and-arrays.html">How to destructure objects andmarrays</a>
+                <p class="post-box-date">23 February, 2020</p>
+                <p class="post-box-tag">JavaScript</p>
+        </div>
+    </div>
+
+    <button class="show-more-blogs"> <a href="{{ url_for('blog')}}">Show More Posts</a>
+    </button>
+
+</section>
+
+<section class="contact" id="connect">
+    <h2>Connect 💬</h2>
+
+    <h2><a href="https://www.linkedin.com/in/darren-nickerson-96469717b/?originalSubdomain=uk">Linkedin</a> | <a
+            href="https://github.com/milcroft"> Github</a></h2>
+
+</section>
+
+{% endblock %}

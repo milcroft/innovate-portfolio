@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+<section class="page-container">
+    <h1 class="main-title">Blog Posts</h1>
+
+
+
+    {% for page in pages %}
+    <ul>
+        <li class="post-item">
+            <div class="posts">
+                <div>
+
+                    <a class="post-links" href="{{ page.path }}.html"> {{ page.title }} </a>
+
+                </div>
+                <div class="post-date">
+                    {{ page.date.strftime('%d %B, %Y') }}
+                </div>
+                <div class="post-category">
+                    {{page.category}}
+                </div>
+
+                
+
+            </div>
+            <div class="post-border"> </div>
+        </li>
+    </ul>
+
+
+
+    {% endfor %}
+
+
+</section>
+{% endblock %}

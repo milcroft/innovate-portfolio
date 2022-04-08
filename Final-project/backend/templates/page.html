@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-container">
+<h1 class="main-title title-width">{{ page.title }} </h1>
+<small class="date-post"> Published on {{ page.date.strftime('%A, %d %B, %Y') }} </small>
+<br>
+</section>
+<section class="md-markup">
+{{ page.html|safe }}
+</section>
+{% endblock %}
